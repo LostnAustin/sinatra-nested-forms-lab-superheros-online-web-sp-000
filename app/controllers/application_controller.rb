@@ -26,10 +26,7 @@ class App < Sinatra::Base
 
         @hero_name << hero[:name]
         @hero_power << hero[:power]
-        # binding.pry
         @hero_bio << hero[:bio]
-
-
 # binding.pry
       end
         erb :teams
