@@ -1,26 +1,18 @@
 
+
   <h2> <%= @team_name %> </h2>
   <h2>Team Motto: <%= @motto %> </h2>
 
 
 
-<div class="hero1">
-  <% @heroes.each do |hero| %>
-  <% binding.pry %>
+<div>
 
-  <h2>Hero name: <%= @hero.name %> </h2>
-  <h3>Power: <%= @hero.power %> </h3>
-  <h3>Biography: <%= @hero.biography %> </h3>
-</div>
+  <% @heroes.each.with_index do |hero, i| %>
 
-<div class ="hero2">
-  <h2>Hero name: <%= @hero.name %> </h2>
-  <h3>Power: <%= @hero.power %> </h3>
-  <h3>Biography: <%= @hero.biography %> </h3>
-</div>
+  <h2>Hero Name: <%= @hero_name[i] %> </h2>
+  <h3>Hero Power: <%= @hero_power[i] %> </h3>
+  <h3>Hero Biography: <%= @hero_bio[i] %> </h3>
 
-<div class ="hero3">
-  <h2>Hero name: <%= @hero.name %> </h2>
-  <h3>Power: <%= @hero.power %> </h3>
-  <h3>Biography: <%= @hero.biography %> </h3>
+  <% end %>
+
 </div>

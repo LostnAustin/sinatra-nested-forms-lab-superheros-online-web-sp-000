@@ -1,27 +1,30 @@
-<!-- <form method="post" action"/team" >
+<form action="/teams" method="post" >
 
 <h1> Create a Team and Heroes! </h1>
 
-  <h3>Team Name: <input type="text" name="team[name]"> <%= @name %> </h3>
+  <h3>Team Name: <input type="text" name="team[name]"> <%= @team_name %> </h3>
   <h3>Team Motto: <input type="text" name="team[motto]"> <%= @motto %> </h3>
 
+  <div class="hero1">
     <h2>Hero 1</h2>
-      <h3>Hero's Name: <input type="text" name="team[hero][][name]"> <% @hero_name %> </h3>
-      <h3>Hero's Power: <input type="text" name="team[hero][][power]"> <% @hero_power %>  </h3>
-      <h3>Hero's Biography: <input type="text" name="team[hero][][biography]"> <% @hero_biography %>  </h3>
-    <br>
+      <h3>Hero's Name: <input type="text" name="team[hero][][name]" id="member1_name"> <%= @member1_name %> </h3>
+      <h3>Hero's Power: <input type="text" name="team[hero][][power]" id="member1_power"> <%= @member1_power %>  </h3>
+      <h3>Hero's Biography: <input type="text" name="team[hero][][bio]" id="member1_bio"> <%= @member1_bio %>  </h3>
+  </div>  <br>
 
+  <div class="hero2">
     <h2>Hero 2</h2>
-    <h3>Hero's Name: <input type="text" name="team[hero][][name]"> <% @hero_name %> </h3>
-    <h3>Hero's Power: <input type="text" name="team[hero][][power]"> <% @hero_power %>  </h3>
-    <h3>Hero's Biography: <input type="text" name="team[hero][][biography]"> <% @hero_biography %>  </h3>
-    <br>
+    <h3>Hero's Name: <input type="text" name="team[hero][][name]" id="member2_name"> <%= @member2_name %> </h3>
+    <h3>Hero's Power: <input type="text" name="team[hero][][power]" id="member2_power"> <%= @member2_power %>  </h3>
+    <h3>Hero's Biography: <input type="text" name="team[hero][][bio]" id="member2_bio"> <%= @member2_bio %>  </h3>
+  </div>  <br>
 
+  <div class="hero3">
     <h2>Hero 3</h2>
-    <h3>Hero's Name: <input type="text" name="team[hero][][name]"> <% @hero_name %> </h3>
-    <h3>Hero's Power: <input type="text" name="team[hero][][power]"> <% @hero_power %>  </h3>
-    <h3>Hero's Biography: <input type="text" name="team[hero][][biography]"> <% @hero_biography %>  </h3>
+    <h3>Hero's Name: <input type="text" name="team[hero][][name]" id="member3_name"> <%= @member3_name %> </h3>
+    <h3>Hero's Power: <input type="text" name="team[hero][][power]" id="member3_power"> <%= @member3_power %>  </h3>
+    <h3>Hero's Biography: <input type="text" name="team[hero][][bio]" id="member3_bio"> <%= @member3_bio %>  </h3>
+  </div>
+    <input type="submit" value="submit" id="submit">
 
-    <input type="submit" value="submit" id="Submit">
-
-</form> -->
+</form>
