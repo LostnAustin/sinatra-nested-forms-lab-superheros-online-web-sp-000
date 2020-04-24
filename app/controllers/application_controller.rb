@@ -30,7 +30,7 @@ class App < Sinatra::Base
         @hero_bio << hero[:bio]
 
         erb :"/super_hero"
-binding.pry
+binding.pry .
       end
     end
 
