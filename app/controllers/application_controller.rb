@@ -29,8 +29,8 @@ class App < Sinatra::Base
         # binding.pry
         @hero_bio << hero[:bio]
 
-      
-# binding.pry 
+
+# binding.pry
       end
         erb :teams
     end
