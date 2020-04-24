@@ -32,7 +32,6 @@ class App < Sinatra::Base
         erb :teams
     end
 
-
     #   @member1_name = params[:team][:hero][0][:name]
     #   @member1_power = params[:team][:hero][0][:power]
     #   @member1_bio = params[:team][:hero][0][:biography]
